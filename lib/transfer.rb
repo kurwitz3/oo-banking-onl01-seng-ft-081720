@@ -17,7 +17,7 @@ class Transfer
     def execute_transaction
        if  valid? == false 
       
-          "Transaction rejected. Please check your account balance."
+        return   "Transaction rejected. Please check your account balance."
          @status = "rejected"
           elsif  @status == "pending"
            receiver.deposit(amount )
