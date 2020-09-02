@@ -20,11 +20,9 @@ class Transfer
            sender.balance = sender.balance - amount 
       @status = "complete"
     else 
-     
-       "Transaction rejected. Please check your account balance."
-     
-  end
-end 
+     "Transaction rejected. Please check your account balance."
+    end
+ end 
     def reverse_transfer 
       while @status == "complete"
       receiver.balance = receiver.balance - amount 
