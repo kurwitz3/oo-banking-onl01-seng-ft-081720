@@ -19,6 +19,7 @@ class Transfer
       
         return   "Transaction rejected. Please check your account balance."
          @status = "rejected"
+         binding.pry 
           elsif  @status == "pending"
            receiver.deposit(amount )
            sender.balance = sender.balance - amount 
